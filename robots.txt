@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sorarin0414.github.io/tcq/sitemap.xml
