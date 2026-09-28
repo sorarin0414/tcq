@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ACCESS | TCQ PUZZLE PROJECT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="entrance.css">
+</head>
+
+<body>
+
+    <!-- 背景の装飾 -->
+    <div class="background-lines"></div>
+
+    <!-- メインコンテンツ -->
+    <main class="entrance">
+
+        <div class="top-info">
+            <span>TCQ / PUZZLE PROJECT</span>
+            <span>ACCESS : 001</span>
+        </div>
+
+        <div class="center-content">
+
+            <div class="classified">
+                CLASSIFIED
+            </div>
+
+            <div class="logo-mark">
+                TCQ
+            </div>
+
+            <p class="subtitle">
+                TOKYO CITY UNIVERSITY QUIZ CLUB
+            </p>
+
+            <div class="line"></div>
+
+            <h1>
+                PUZZLE<br>
+                <span>PROJECT</span>
+            </h1>
+
+            <p class="message">
+                この先には、<br>
+                TCQが仕掛けた「謎」が存在します。
+            </p>
+
+            <p class="question">
+                ARE YOU READY?
+            </p>
+
+            <button id="accessButton" class="access-button">
+                <span>ENTER</span>
+                <span class="arrow">→</span>
+            </button>
+
+        </div>
+
+        <div class="bottom-info">
+            <span>EST. 2026</span>
+            <span>THINK / OBSERVE / SOLVE</span>
+        </div>
+
+    </main>
+
+
+    <!-- 画面切り替え用 -->
+    <div id="transition" class="transition">
+        <div class="transition-text">
+            ACCESS GRANTED
+        </div>
+    </div>
+
+
+    <script>
+        var accessButton = document.getElementById("accessButton");
+        var transition = document.getElementById("transition");
+
+        accessButton.addEventListener("click", function() {
+
+            accessButton.classList.add("clicked");
+
+            transition.classList.add("show");
+
+            setTimeout(function() {
+                window.location.href = "nazo.html";
+            }, 1300);
+
+        });
+    </script>
+
+</body>
+</html>
