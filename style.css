@@ -986,3 +986,136 @@ body {
     }
 
 }
+/* =========================
+   OFFICIAL SNS
+========================= */
+
+.sns-section {
+    padding: 120px 20px;
+    background-color: #07111f;
+    text-align: center;
+}
+
+.sns-section .section-inner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* OFFICIAL SNS */
+.sns-section .section-label {
+    margin: 0 0 15px;
+    color: #6da9ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* タイトル */
+.sns-section h2 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+/* 説明文 */
+.sns-description {
+    display: block;
+    margin: 0 0 45px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+/* SNSボタン */
+.sns-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Xカード */
+.sns-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 320px;
+    height: 180px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #3d506b;
+    background-color: #0c192b;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/* マウスを乗せたとき */
+.sns-button:hover {
+    border-color: #ffffff;
+    background-color: #14243a;
+    transform: translateY(-6px);
+}
+
+/* Xロゴ */
+.sns-name {
+    display: block;
+    margin-bottom: 15px;
+
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* OFFICIAL ACCOUNT */
+.sns-sub {
+    display: block;
+
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   SNS - MOBILE
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    .sns-section {
+        padding: 90px 20px;
+    }
+
+    .sns-section h2 {
+        font-size: 32px;
+    }
+
+    .sns-description {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 35px;
+    }
+
+    .sns-button {
+        width: 280px;
+        height: 160px;
+    }
+
+    .sns-name {
+        font-size: 56px;
+    }
+
+    .sns-sub {
+        font-size: 11px;
+    }
+
+}
