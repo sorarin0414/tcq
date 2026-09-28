@@ -1119,3 +1119,125 @@ body {
     }
 
 }
+/* =========================
+   OFFICIAL SNS
+========================= */
+
+.sns-section {
+    padding: 120px 20px;
+    background-color: #07111f;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sns-section .section-inner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sns-section .section-label {
+    margin: 0 0 15px;
+    color: #6da9ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.sns-section h2 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sns-description {
+    margin: 0 0 45px;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.sns-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.sns-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 320px;
+    height: 180px;
+
+    background-color: #0c192b;
+
+    border: 1px solid #4c607a;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.sns-button:hover {
+    background-color: #172942;
+    border-color: #ffffff;
+    transform: translateY(-6px);
+}
+
+.sns-name {
+    display: block;
+    margin-bottom: 15px;
+
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.sns-sub {
+    display: block;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   SNS MOBILE
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    .sns-section {
+        padding: 90px 20px;
+    }
+
+    .sns-section h2 {
+        font-size: 32px;
+    }
+
+    .sns-description {
+        font-size: 15px;
+    }
+
+    .sns-button {
+        width: 280px;
+        height: 160px;
+    }
+
+    .sns-name {
+        font-size: 60px;
+    }
+
+    .sns-sub {
+        font-size: 11px;
+    }
+
+}
