@@ -1,0 +1,326 @@
+/* =========================
+   CONTACT PAGE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #071426;
+    color: #ffffff;
+    font-family: Arial, "Noto Sans JP", sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.contact-header {
+    width: 100%;
+    height: 80px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: #071426;
+}
+
+.contact-logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.contact-home {
+    color: #9fb5cc;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.contact-home:hover {
+    color: #ffffff;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.contact-page {
+    min-height: calc(100vh - 140px);
+    padding: 90px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(50, 100, 160, 0.18),
+            transparent 45%
+        ),
+        #071426;
+}
+
+
+/* =========================
+   CONTENT BOX
+========================= */
+
+.contact-box {
+    width: 100%;
+    max-width: 760px;
+    text-align: center;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.contact-label {
+    margin: 0 0 20px;
+    color: #8fb7e8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.contact-box h1 {
+    margin: 0 0 30px;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   LEAD
+========================= */
+
+.contact-lead {
+    margin: 0 0 45px;
+    color: #c9d5e2;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+/* =========================
+   STUDENT ONLY
+========================= */
+
+.student-only {
+    margin: 0 auto 45px;
+    padding: 28px 30px;
+    max-width: 680px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #8fb7e8;
+}
+
+.student-title {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.student-only p:last-child {
+    margin: 0;
+    color: #b9c8d8;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   FORM AREA
+========================= */
+
+.form-area {
+    margin-top: 10px;
+}
+
+.form-label {
+    margin: 0 0 15px;
+    color: #718aa5;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   FORM BUTTON
+========================= */
+
+.form-button {
+    width: 100%;
+    max-width: 560px;
+    min-height: 72px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    color: #071426;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border: 1px solid #ffffff;
+
+    transition: 0.3s;
+}
+
+.form-button:hover {
+    background: transparent;
+    color: #ffffff;
+}
+
+.arrow {
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.form-button:hover .arrow {
+    transform: translateX(6px);
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-button {
+    display: inline-block;
+    margin-top: 35px;
+
+    color: #8fa6bd;
+    text-decoration: none;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    color: #ffffff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.contact-footer {
+    height: 60px;
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: #071426;
+}
+
+.contact-footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contact-footer span {
+    color: #62758a;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   SMARTPHONE
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    .contact-header {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .contact-logo {
+        font-size: 23px;
+    }
+
+    .contact-home {
+        font-size: 10px;
+    }
+
+    .contact-page {
+        min-height: calc(100vh - 130px);
+        padding: 60px 20px;
+    }
+
+    .contact-box h1 {
+        font-size: 34px;
+        letter-spacing: 2px;
+    }
+
+    .contact-lead {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .student-only {
+        padding: 22px 20px;
+    }
+
+    .student-title {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .student-only p:last-child {
+        font-size: 13px;
+    }
+
+    .form-button {
+        min-height: 65px;
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .contact-footer {
+        padding: 0 20px;
+    }
+
+    .contact-footer span {
+        display: none;
+    }
+
+}

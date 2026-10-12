@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+
+    <title>NEWS｜TCQ</title>
+
+    <meta name="description"
+          content="東京都市大学クイズ研究会 TCQのお知らせ一覧です。">
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+
+    <!-- NEWS PAGE CSS -->
+
+    <style>
+
+        /* ==================================================
+           NEWS PAGE
+        ================================================== */
+
+        .news-page {
+            min-height: 100vh;
+            background-color: #f3f5f7;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        .news-page-header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 100px 20px 80px;
+        }
+
+
+        .news-page-header-inner {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+
+        .news-page-label {
+            margin: 0 0 10px;
+            color: #66c7ff;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 4px;
+        }
+
+
+        .news-page-header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+
+        /* =========================
+           CONTENT
+        ========================== */
+
+        .news-page-content {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 80px 20px 100px;
+        }
+
+
+        .news-page-list {
+            width: 100%;
+            border-top: 1px solid #d8dee5;
+        }
+
+
+        .news-page-item {
+            width: 100%;
+            min-height: 100px;
+            padding: 0 25px;
+
+            display: flex;
+            align-items: center;
+
+            background-color: #ffffff;
+            color: #172033;
+
+            text-decoration: none;
+
+            border-bottom: 1px solid #d8dee5;
+
+            transition: 0.3s ease;
+        }
+
+
+        .news-page-item:hover {
+            background-color: #eaf5fc;
+        }
+
+
+        .news-page-date {
+            width: 160px;
+
+            color: #0071bc;
+
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+
+        .news-page-title {
+            flex: 1;
+
+            color: #172033;
+
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+
+        .news-page-arrow {
+            width: 40px;
+
+            color: #0071bc;
+
+            font-size: 20px;
+
+            text-align: right;
+
+            transition: 0.3s ease;
+        }
+
+
+        .news-page-item:hover .news-page-arrow {
+            transform: translateX(6px);
+        }
+
+
+        /* =========================
+           BACK BUTTON
+        ========================== */
+
+        .news-page-back {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+
+        .news-page-back a {
+            display: inline-block;
+
+            padding: 14px 30px;
+
+            background-color: #003366;
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            transition: 0.3s ease;
+        }
+
+
+        .news-page-back a:hover {
+            background-color: #0071bc;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        .news-page-footer {
+            padding: 40px 20px;
+
+            background-color: #07111f;
+            color: #ffffff;
+
+            text-align: center;
+        }
+
+
+        .news-page-footer strong {
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 3px;
+        }
+
+
+        .news-page-footer p {
+            margin: 0;
+
+            color: #9aa8b8;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media screen and (max-width: 768px) {
+
+            .news-page-header {
+                padding: 70px 20px 60px;
+            }
+
+
+            .news-page-header h1 {
+                font-size: 36px;
+            }
+
+
+            .news-page-content {
+                padding: 50px 15px 70px;
+            }
+
+
+            .news-page-item {
+                min-height: 90px;
+                padding: 18px 15px;
+                flex-wrap: wrap;
+            }
+
+
+            .news-page-date {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+
+            .news-page-title {
+                width: calc(100% - 40px);
+                flex: none;
+                font-size: 14px;
+            }
+
+
+            .news-page-arrow {
+                width: 40px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         PAGE TRANSITION
+    ========================== -->
+
+    <div class="page-transition"
+         aria-hidden="true">
+    </div>
+
+
+
+    <!-- =========================
+         NEWS PAGE
+    ========================== -->
+
+    <div class="news-page">
+
+
+        <!-- HEADER -->
+
+        <header class="news-page-header">
+
+            <div class="news-page-header-inner">
+
+                <p class="news-page-label">
+                    NEWS
+                </p>
+
+                <h1>
+                    お知らせ
+                </h1>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- CONTENT -->
+
+        <main class="news-page-content">
+
+
+            <div class="news-page-list">
+
+
+                <!-- NEWS 001 -->
+
+                <a href="news001.html"
+                   class="news-page-item">
+
+                    <span class="news-page-date">
+                        2026.09.29
+                    </span>
+
+                    <span class="news-page-title">
+                        公式サイトを公開しました。
+                    </span>
+
+                    <span class="news-page-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- BACK -->
+
+            <div class="news-page-back">
+
+                <a href="index.html">
+                    ← TOPへ戻る
+                </a>
+
+            </div>
+
+
+        </main>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="news-page-footer">
+
+            <strong>
+                TCQ
+            </strong>
+
+            <p>
+                © TCQ - Tokyo City University Quiz Club
+            </p>
+
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         PAGE TRANSITION SCRIPT
+    ========================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const transition =
+                document.querySelector(".page-transition");
+
+
+            if (transition) {
+
+                /*
+                 * ページが読み込まれたら
+                 * 青い画面を右側へ抜いていく
+                 */
+
+                transition.classList.add("is-entering");
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
